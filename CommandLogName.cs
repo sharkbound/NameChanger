@@ -95,7 +95,7 @@ namespace NameChanger
                     names += string.Format("\n CSteamID: [{0}] DisplayName: [{1}]  SteamProfileUrl: [{2} ] SteamName: [{3}]",
                         uPlayer.CSteamID.ToString(),
                         uPlayer.DisplayName,
-                        String.Format("https://www.steamcommunity.com/id/{0}", uPlayer.SteamProfile.CustomURL),
+                        String.Format("https://steamcommunity.com/profiles/{0}", uPlayer.CSteamID),
                         uPlayer.SteamName);
                 }
 
