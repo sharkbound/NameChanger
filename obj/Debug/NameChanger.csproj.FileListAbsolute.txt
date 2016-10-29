@@ -1,0 +1,11 @@
+C:\Users\owner\Desktop\GitHub\RocketModPlugins\NameChanger\NameChanger\bin\Debug\NameChanger.dll
+C:\Users\owner\Desktop\GitHub\RocketModPlugins\NameChanger\NameChanger\bin\Debug\NameChanger.pdb
+C:\Users\owner\Desktop\GitHub\RocketModPlugins\NameChanger\NameChanger\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\owner\Desktop\GitHub\RocketModPlugins\NameChanger\NameChanger\bin\Debug\Assembly-CSharp.dll
+C:\Users\owner\Desktop\GitHub\RocketModPlugins\NameChanger\NameChanger\bin\Debug\Rocket.API.dll
+C:\Users\owner\Desktop\GitHub\RocketModPlugins\NameChanger\NameChanger\bin\Debug\Rocket.Core.dll
+C:\Users\owner\Desktop\GitHub\RocketModPlugins\NameChanger\NameChanger\bin\Debug\Rocket.Unturned.dll
+C:\Users\owner\Desktop\GitHub\RocketModPlugins\NameChanger\NameChanger\bin\Debug\UnityEngine.dll
+C:\Users\owner\Desktop\GitHub\RocketModPlugins\NameChanger\NameChanger\obj\Debug\NameChanger.csprojResolveAssemblyReference.cache
+C:\Users\owner\Desktop\GitHub\RocketModPlugins\NameChanger\NameChanger\obj\Debug\NameChanger.dll
+C:\Users\owner\Desktop\GitHub\RocketModPlugins\NameChanger\NameChanger\obj\Debug\NameChanger.pdb
