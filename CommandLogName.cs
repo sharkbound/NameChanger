@@ -92,11 +92,7 @@ namespace NameChanger
                 foreach (var player in Provider.Players)
                 {
                     uPlayer = UnturnedPlayer.FromSteamPlayer(player);
-                    names += string.Format("\n CSteamID: [{0}] DisplayName: [{1}]  SteamProfileUrl: [{2} ] SteamName: [{3}]",
-                        uPlayer.CSteamID.ToString(),
-                        uPlayer.DisplayName,
-                        String.Format("https://steamcommunity.com/profiles/{0}", uPlayer.CSteamID),
-                        uPlayer.SteamName);
+                    names += formatPlayerLog(getFormat(), uPlayer);
                 }
 
                 var writer = File.AppendText(getFileName());
@@ -108,11 +104,7 @@ namespace NameChanger
             if (ID.ToString() != "0")
             {
                 var targetPlayer = UnturnedPlayer.FromCSteamID(ID);
-                names += string.Format("\n CSteamID: [{0}] DisplayName: [{1}]  SteamProfileUrl: [{2} ] SteamName: [{3}]",
-                           targetPlayer.CSteamID,
-                           targetPlayer.DisplayName,
-                           String.Format("https://steamcommunity.com/profiles/{0}", targetPlayer.CSteamID),
-                           targetPlayer.SteamName);
+                names += formatPlayerLog(getFormat(), targetPlayer);
 
                 if (targetPlayer != null)
                 {
@@ -130,6 +122,16 @@ namespace NameChanger
         string getFileName()
         {
             return "NameLog.txt";
+        }
+
+        string getFormat()
+        {
+            return "\n CSteamID: [{0}] DisplayName: [{1}] SteamName: [{2}] SteamProfileUrl: [{3} ]";
+        }
+
+        string formatPlayerLog(string format, UnturnedPlayer player)
+        {
+            return string.Format(format, player.CSteamID, player.DisplayName, player.SteamName, "https://steamcommunity.com/profiles/" + player.CSteamID); 
         }
 
         void msg(IRocketPlayer caller, string message)
