@@ -89,7 +89,7 @@ namespace NameChanger
             string names = "";
             if (allNames)
             {
-                foreach (var player in Provider.Players)
+                foreach (var player in Provider.clients)
                 {
                     uPlayer = UnturnedPlayer.FromSteamPlayer(player);
                     names += formatPlayerLog(getFormat(), uPlayer);
